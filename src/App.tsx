@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import logoUrl from './assets/logo.png';
 import { motion } from 'framer-motion';
 import {
   MessageSquare,
@@ -34,8 +35,8 @@ function App() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-container">
           <div className="logo">
-            <div className="logo-icon">
-              <Workflow size={20} color="#050505" />
+            <div style={{ width: 40, height: 40, display: 'flex', alignItems: 'center' }}>
+              <img src={logoUrl} alt="ShivConnect Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
             </div>
             <span>Shiv<span className="text-gradient">Connect</span></span>
           </div>
@@ -259,8 +260,8 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="logo" style={{ fontSize: '1.25rem' }}>
-              <div className="logo-icon" style={{ width: 24, height: 24 }}>
-                <Workflow size={14} color="#050505" />
+              <div style={{ width: 32, height: 32, display: 'flex', alignItems: 'center' }}>
+                <img src={logoUrl} alt="ShivConnect Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <span>Shiv<span className="text-gradient">Connect</span></span>
             </div>
